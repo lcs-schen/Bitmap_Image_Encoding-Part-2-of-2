@@ -22,11 +22,11 @@
  */
 
 // Here's my list of points describing how I decoded the image...
-// 1.
-// 2.
-// 3.
-// 4.
-// 5.
+// 1. know what image do i want
+// 2.draw it on the paper, and find the size of it
+// 3.count how many white and black squares in the image
+// 4.put it in the number
+// 5.write it down, and make sure the sum of every line are same
 // etc. (add more points as needed)
 
 /*:
