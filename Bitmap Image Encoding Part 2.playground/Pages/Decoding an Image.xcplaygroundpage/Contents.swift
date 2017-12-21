@@ -20,12 +20,26 @@ import PlaygroundSupport
 
 // Copy your encoded image string here...
 let encodedBitmap = """
-1,3,1
-4,1
-1,4
-0,1,3,1
-0,1,3,1
-1,4
+a7b1a49
+a5b2c1b1a29
+a4b1c1b1c1b1a29
+a3b1c3d1b1a29
+a3b1c2d1b3a28
+a1b3d3b1e2b2a26
+b1e1b2d2b1e5b1a7
+b2e2b2e1b1e2b3a7
+b2e4b1c1e2b2a3b5
+a1b1e3b2c1e2b1a3b1c5
+a1b3c2e4b1a1b1c6
+a2b1c4e2b1e1b1a1b1c3d1b2
+a1b1d1b6d1b1e1b1d1c2d2b2
+a2b1d6c1b1e2b1d4b2
+a2b1c3d2b1c1b1e1b3d2b1a2
+a3b1d1c1d1c1b2e4b3a3
+a3b2c1b1c1b1e3b3a5
+a3b1e1b1e1b3e3b2a5
+a3b1e1b1e2b1e4b1a6
+a4b4a1b4a7
 """
 
 // Make a canvas
@@ -54,12 +68,32 @@ var drawThisManyPixels = 0
 for character in encodedBitmap {
     
     // Set colour at start of a line
-    if character == "0" {
+    if character == "a" {
         
+        canvas.fillColor = Color.blue
+        currentColor = "blue"
+
+    } else if character == "b" {
         canvas.fillColor = Color.black
         currentColor = "black"
-
-    } else if character == "," {
+   
+    } else if character == "c" {
+        canvas.fillColor = Color.white
+        currentColor = "white"
+   
+    } else if character == "d" {
+        canvas.fillColor = Color.yellow
+        currentColor = "yellow"
+        
+    } else if character == "e" {
+        canvas.fillColor = Color.red
+        currentColor = "red"
+    
+    } else if character == "e" {
+        canvas.fillColor = Color.red
+        currentColor = "red"
+    
+    
         
         // We have a new number
         // Are we past the first pixel in a row?
